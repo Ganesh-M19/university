@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css>
+
+    <title>Courses</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Baloo Bhaijaan 2';
+        }
+
+        #header {
+            min-height: 50vh;
+            font-family: 'Baloo Bhaijaan 2';
+            width: 100vw;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(background.jpg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+        }
+
+        #header .head {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            padding-top: 8.5rem;
+        }
+
+        #course {
+            min-height: 100vh;
+            width: 100vw;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        #course h1 {
+            font-size: 3rem;
+        }
+
+        .content,
+        .content3 {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .content div {
+            min-height: 200px;
+            width:400px;
+            background-color: wheat;
+            margin: 1rem;
+            margin-top: 5rem;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 15px black;
+        }
+
+        .content div:hover {
+            box-shadow: 5px 5px 15px black, -5px -5px 15px black;
+        }
+
+        #facilities {
+            min-height: 100vh;
+            width: 100vw;
+            margin-top: 10rem;
+        }
+
+        .content3 div {
+            min-height: 380px;
+            width: 400px;
+            margin: 25px;
+            border-radius: 10px;
+        }
+
+        .content3 img {
+            width: 100%;
+            min-height: 100%;
+            border-radius: 10px;
+            box-shadow: 3px 3px 15px black;
+        }
+
+        #facilities p:not(#footer p) {
+            margin-bottom: 2.5rem;
+        }
+
+
+        #footer {
+            margin-top: 10rem;
+        }
+
+        #footer a i {
+            color: red;
+            padding: 10px;
+            margin: 20px 0 10px 0;
+            text-decoration: none;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #footer a:hover {
+            color: orangered;
+        }
+
+        #footer h3 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="head">Courses & Facilities</h1>
+    </div>
+    <div id="course" name="course">
+        <div>
+            <h1>Courses We Offer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, quis?</p>
+        </div>
+
+        <div class="content">
+            <div>
+                <h2>Intermediate</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio eaque distinctio ullam veritatis,
+                    obcaecati error ut rem dolorum, delectus ratione impedit molestiae excepturi voluptate magni sint
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                </p>
+            </div>
+            <div>
+                <h2>Degree</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio eaque distinctio ullam veritatis,
+                    obcaecati error ut rem dolorum, delectus ratione impedit molestiae excepturi voluptate magni sint
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                </p>
+            </div>
+            <div>
+                <h2>Post Graduation</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A optio eaque distinctio ullam veritatis,
+                    obcaecati error ut rem dolorum, delectus ratione impedit molestiae excepturi voluptate magni sint
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                    deserunt! Quos maiores quidem neque consequatur numquam eveniet debitis odio! Laboriosam quas
+                </p>
+            </div>
+        </div>
+        <div ID="facilities">
+            <div>
+                <h1>Our Facilities</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, earum.</p>
+            </div>
+            <div class="content3">
+                <div>
+                    <img src="library.png">
+                    <h3>World Class Library</h3>
+                </div>
+                <div>
+                    <img src="basketball.png">
+                    <h3>Largest Play Ground</h3>
+                </div>
+                <div>
+                    <img src="cafeteria.png">
+                    <h3>Testy And Healthy Food</h3>
+                </div>
+            </div>
+
+            <div id="footer">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis facere ex aspernatur ipsam, quidem
+                    commodi!</p>
+                <p>Mobile No- 9930676353, 5544123655, 7894123545</p>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""> <i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/accounts/onetap/?next=%2F" target="_blank"> <i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+                <p>made by @ganesh more</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

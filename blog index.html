@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css>
+
+    <title>Blog</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Baloo Bhaijaan 2';
+        }
+
+        #header {
+            min-height: 50vh;
+            font-family: 'Baloo Bhaijaan 2';
+            width: 100vw;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(background.jpg);
+            background-position: top;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: black;
+        }
+
+        #header .head {
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+            padding-top: 8.5rem;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100vw;
+            min-height: 100vh;
+        }
+
+        .content div {
+            width: 600px;
+            height: 400px;
+            margin-top: 4rem;
+        }
+
+        .content img {
+            width: 100%;
+            min-height: 100%;
+            box-shadow: 2px 2px 25px black;
+
+        }
+
+        .content h3,
+        p {
+            text-align: center;
+        }
+
+        .content div:nth-child(2) {
+            margin-left: 5rem;
+        }
+        table td:nth-of-type(even) {
+            color: red;
+        }
+
+        td {
+            padding: 8px;
+            padding-left: 3rem;
+        }
+
+        table thead tr th {
+            padding: 1rem 10rem;
+            font-size: 1.5rem;
+            background-color: orangered;
+
+        }
+        form,h3{
+            margin-top: 2rem;
+        }
+        form input,textarea{
+            display: flex;
+            width: 500px;
+            margin: 2rem;
+            padding: .5rem;
+            background-color: lightgray;
+            border: none;
+            outline: none;
+            font-size: 1.1rem;
+        }
+        form button{
+            margin:1rem 14rem;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: transparent;
+            transition: all .5s ease-in-out;
+        }
+        form button:hover{
+            background-color: orangered;
+            color: white;
+            border:none;
+            box-shadow: 5px 5px 25px orangered, -5px -5px 25px orangered;
+        }
+  
+        @media(max-width:640px) {
+            .content div:nth-child(2) {
+                margin-left: 3rem;
+            }
+        }
+
+        @media(max-width:1280px) {
+            .content div:nth-child(2) {
+                margin-top:70rem;
+            }
+           
+        }
+
+        @media(max-width:667px) {
+            .content div:nth-child(2) {
+                margin-top: 70rem;
+                width: 500px;
+                min-height: 300px;
+            }
+            .content div,form{
+                 width: 500px;
+                height: 300px;
+            }
+           
+        }
+
+        @media(max-width:500px) {
+            .content div:nth-child(2) {
+                margin-top: 74rem;
+                width: 400px;
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <h1 class="head">Our Certification & Online Progranes For 2022</h1>
+    </div>
+    <div class="content">
+        <div>
+            <img src="certificate.jpg">
+            <h3>Our Certification & Online Progranes For 2022</h3>
+      
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab impedit in quaerat hagfhhh doloremque eum.
+                Corrupti
+                amet omnis consequatur. Error doloribus voluptatum omnis a distinctio. Sed iste enim illo voluptatum
+                explicabo voluptas quisquam delectus abhiii iusto, non aliquam hic, rem dolorum, aut ipsa at
+                voluptatibus
+                ea. Error dicta labore enim impedit quam magni natus dolores velit dolorum, nesciunt eos eaque, mollitia
+                pariatur recusandae, repellat quo placeat. Commodi quisquam, eum iste debitis, magni quos jhg assumenda
+                dicta nobis laborum vitae corrupti corporis officiis, minima consequatur jjh suscipit maiores? Expedita
+                ad,
+                molestiae, delectus dignissimos laudantium</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, mollitia omnis? Consectetur aliquam magni
+                laboriosam modi quasi. Reiciendis architecto, illum fugit ex beatae modi, reprehenderit assumenda a
+                dolore repellendus voluptatem voluptas ullam et voluptates quod consequuntur autem ad, perspiciatis
+                atque ut nemo. Laudantium praesentium similique soluta quidem unde, asperiores officiis.</p>
+
+            <form action="#" method="POST" autocomplete="off">
+                <fieldset>
+                    <h3>Leave a comment</h3>
+                    <label for="name" name="name" id="name">
+                        <input type="text" placeholder="Enter Name" required>
+                    </label>
+                    <label for="email" name="email" id="email">
+                        <input type="email" placeholder="Enter email" required>
+                    </label>
+                    <label for="emailcomment" name="emailcomment" id="emailcomment">
+                        <textarea type="text" placeholder="Your Comment"  rows="3" required></textarea>
+                    </label>
+                    <label for="button" name="button" id="button">
+                        <button>POST COMMENT</button>
+                    </label>
+                </fieldset>
+            </form>
+        </div>
+
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Post Categories</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bussiness Analytics</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Data Science</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Machine Learning</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Computr Science</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>AutoCAD</td>
+                        <td>42</td>
+                    </tr>
+                    <tr>
+                        <td>Journalism</td>
+                        <td>22</td>
+                    </tr>
+                    <tr>
+                        <td>Commerce</td>
+                        <td>13</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+   
+</body>
+
+</html>
